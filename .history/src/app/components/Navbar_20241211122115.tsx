@@ -11,7 +11,7 @@ export default function NavBar() {
   useEffect(() => {
     const checkIsMobile = () => {
       setIsMobile(window.innerWidth < 123)
-      if (window.innerWidth >= 123) {
+      if (window.innerWidth >= 768) {
         setIsOpen(false)
       }
     }

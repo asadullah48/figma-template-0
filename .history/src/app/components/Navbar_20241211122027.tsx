@@ -6,12 +6,12 @@ import { Heart, Menu, Search, ShoppingCart, User, X } from 'lucide-react'
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
+  
 
   useEffect(() => {
     const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 123)
-      if (window.innerWidth >= 123) {
+      setIsMobile(window.innerWidth < 768)
+      if (window.innerWidth >= 768) {
         setIsOpen(false)
       }
     }
